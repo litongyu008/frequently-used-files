@@ -6,6 +6,8 @@
 # 2. ./configure (See below)
 # 3. make
 # 4. make install
+# 5. For check python support version, run "vim --version | grep python"
+#    Note that some plugins imported by vimrc can only be supported by python2
 
 ./configure \
 --with-features=huge \

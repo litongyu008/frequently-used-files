@@ -4,11 +4,10 @@
 # Installation Guides:
 # 1. cd vim/
 # 2. make distclean
-# 3. mkdir build && cd build
-# 4. ../configure (See below)
-# 5. make
-# 6. make install
-# 7. For check python support version, run "vim --version | grep python"
+# 3. ./configure (See below)
+# 4. make
+# 5. make install
+# 6. For check python support version, run "vim --version | grep python"
 #    Note that some plugins imported by vimrc can only be supported by python2
 
 ../configure \

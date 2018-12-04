@@ -10,7 +10,7 @@
 # 6. For check python support version, run "vim --version | grep python"
 #    Note that some plugins imported by vimrc can only be supported by python2
 
-../configure \
+./configure \
 --with-features=huge \
 --enable-multibyte \
 --enable-luainterp \

@@ -2,14 +2,16 @@
 # It is possible for both to be enabled (using python/dyn and python3/dyn), but during a session, only one can be used.
 
 # Installation Guides:
-# 1. make distclean
-# 2. ./configure (See below)
-# 3. make
-# 4. make install
-# 5. For check python support version, run "vim --version | grep python"
+# 1. cd vim/
+# 2. make distclean
+# 3. mkdir build && cd build
+# 4. ../configure (See below)
+# 5. make
+# 6. make install
+# 7. For check python support version, run "vim --version | grep python"
 #    Note that some plugins imported by vimrc can only be supported by python2
 
-./configure \
+../configure \
 --with-features=huge \
 --enable-multibyte \
 --enable-luainterp \

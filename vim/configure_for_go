@@ -1,0 +1,21 @@
+#! /bin/sh
+
+# This is just a stub for the Unix configure script, to provide support for
+# doing "./configure" in the top Vim directory.
+
+#cd src && exec ./configure "$@"
+cd src && exec ./configure \
+--with-features=huge \
+--enable-multibyte \
+--enable-rubyinterp=yes \
+--enable-luainterp=yes \
+--enable-pythoninterp=yes \
+--enable-cscope \
+--enable-gui=auto \
+--enable-gnome-check \
+--enable-fontset \
+--with-ruby-command=$ENV_PATH/ruby \
+--with-luajit \
+--with-python-config-dir=$ENV_PATH/python27/lib/python2.7/config \
+--with-compiledby="$USER" \
+--prefix=$HOME/env/vim8/
